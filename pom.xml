@@ -80,7 +80,7 @@
   
   <profiles>
   <profile>
-  <id>PositiveTests</id>
+  <id>Regression</id>
   <build>
   <plugins>
       <plugin>
