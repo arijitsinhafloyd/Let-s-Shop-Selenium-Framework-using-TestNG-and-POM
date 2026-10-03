@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Regression</th></tr>
+<tr><td><a href="#t0">Negative</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">56,317</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Positive</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">63,108</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num attn">1</th><th class="num">0</th><th class="num">119,425</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Negative &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">arijit.practice.ErrorValidation</td><td><a href="#m0">productError</a></td><td rowspan="1">1790710902377</td><td rowspan="1">15069</td></tr><tr><th colspan="4">Negative &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">arijit.practice.ErrorValidation</td><td><a href="#m1">loginError</a></td><td rowspan="1">1790710892807</td><td rowspan="1">635</td></tr><tr class="passedeven"><td><a href="#m2">productError</a></td><td rowspan="1">1790710925706</td><td rowspan="1">10337</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Positive &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">arijit.practice.PositiveTests</td><td><a href="#m3">SubmitOrderTest</a></td><td rowspan="2">1790710892643</td><td rowspan="2">11647</td></tr><tr class="passedeven"><td><a href="#m4">SubmitOrderTest</a></td></tr><tr class="passedeven"><td><a href="#m5">productVerification</a></td><td rowspan="2">1790710941945</td><td rowspan="2">2187</td></tr><tr class="passedeven"><td><a href="#m6">productVerification</a></td></tr></tbody>
+</table>
+<h2>Negative</h2><h3 id="m0">arijit.practice.ErrorValidation#productError</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .cartSection h3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.57 (73c14f6228d7..., userDataDir: C:\Users\BISWAJIT\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60683}, goog:processID: 13880, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60683/devtoo..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d527a40bae936b6ea520a7dc7519534b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at arijit.practice.abstractComponents.AbstractComponents.waitBy(AbstractComponents.java:49)
+	at arijit.practice.pagecomponents.CartPage.getCartProducts(CartPage.java:32)
+	at arijit.practice.pagecomponents.CartPage.productsInCartVerification(CartPage.java:38)
+	at arijit.practice.ErrorValidation.productError(ErrorValidation.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">arijit.practice.ErrorValidation#loginError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">arijit.practice.ErrorValidation#productError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Positive</h2><h3 id="m3">arijit.practice.PositiveTests#SubmitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Asdf@1234, product=ADIDAS ORIGINAL, email=contact@arijitsinha.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">arijit.practice.PositiveTests#SubmitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Asdf@2345, product=ZARA COAT 3, email=kriti.sanon@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">arijit.practice.PositiveTests#productVerification</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Asdf@2345, product=ZARA COAT 3, email=kriti.sanon@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">arijit.practice.PositiveTests#productVerification</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=Asdf@1234, product=ADIDAS ORIGINAL, email=contact@arijitsinha.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

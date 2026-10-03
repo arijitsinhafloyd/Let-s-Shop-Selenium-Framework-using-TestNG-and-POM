@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="7" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-30T01:11:21 IST" name="Regression" finished-at="2026-09-30T01:12:24 IST" duration-ms="63108">
+    <groups>
+      <group name="ErrorValidations">
+        <method signature="ErrorValidation.loginError()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" name="loginError" class="arijit.practice.ErrorValidation"/>
+        <method signature="ErrorValidation.productError()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" name="productError" class="arijit.practice.ErrorValidation"/>
+      </group> <!-- ErrorValidations -->
+    </groups>
+    <test started-at="2026-09-30T01:11:21 IST" name="Negative" finished-at="2026-09-30T01:12:17 IST" duration-ms="56317">
+      <class name="arijit.practice.ErrorValidation">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:21 IST" name="invokeBrowser" finished-at="2026-09-30T01:11:32 IST" duration-ms="11550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="loginError()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:32 IST" name="loginError" finished-at="2026-09-30T01:11:33 IST" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:33 IST" name="tearDown" finished-at="2026-09-30T01:11:34 IST" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:34 IST" name="invokeBrowser" finished-at="2026-09-30T01:11:42 IST" duration-ms="7843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method retried="true" signature="productError()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:42 IST" name="productError" finished-at="2026-09-30T01:11:57 IST" duration-ms="15069" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .cartSection h3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.57 (73c14f6228d7..., userDataDir: C:\Users\BISWAJIT\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60683}, goog:processID: 13880, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60683/devtoo..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d527a40bae936b6ea520a7dc7519534b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: .cartSection h3 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.57 (73c14f6228d7..., userDataDir: C:\Users\BISWAJIT\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60683}, goog:processID: 13880, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60683/devtoo..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d527a40bae936b6ea520a7dc7519534b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at arijit.practice.abstractComponents.AbstractComponents.waitBy(AbstractComponents.java:49)
+at arijit.practice.pagecomponents.CartPage.getCartProducts(CartPage.java:32)
+at arijit.practice.pagecomponents.CartPage.productsInCartVerification(CartPage.java:38)
+at arijit.practice.ErrorValidation.productError(ErrorValidation.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:57 IST" name="tearDown" finished-at="2026-09-30T01:11:59 IST" duration-ms="1816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:11:59 IST" name="invokeBrowser" finished-at="2026-09-30T01:12:05 IST" duration-ms="6438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="productError()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:12:05 IST" name="productError" finished-at="2026-09-30T01:12:16 IST" duration-ms="10337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.ErrorValidation@8458f04]" started-at="2026-09-30T01:12:16 IST" name="tearDown" finished-at="2026-09-30T01:12:17 IST" duration-ms="1478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- arijit.practice.ErrorValidation -->
+    </test> <!-- Negative -->
+    <test started-at="2026-09-30T01:11:21 IST" name="Positive" finished-at="2026-09-30T01:12:24 IST" duration-ms="63108">
+      <class name="arijit.practice.PositiveTests">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:11:21 IST" name="invokeBrowser" finished-at="2026-09-30T01:11:32 IST" duration-ms="10997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="SubmitOrderTest(java.util.HashMap)[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:11:32 IST" name="SubmitOrderTest" data-provider="getData" finished-at="2026-09-30T01:11:44 IST" duration-ms="11647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=Asdf@1234, product=ADIDAS ORIGINAL, email=contact@arijitsinha.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:11:44 IST" name="tearDown" finished-at="2026-09-30T01:11:44 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:11:44 IST" name="invokeBrowser" finished-at="2026-09-30T01:11:51 IST" duration-ms="7261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="SubmitOrderTest(java.util.HashMap)[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:11:51 IST" name="SubmitOrderTest" data-provider="getData" finished-at="2026-09-30T01:12:03 IST" duration-ms="11801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=Asdf@2345, product=ZARA COAT 3, email=kriti.sanon@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:03 IST" name="tearDown" finished-at="2026-09-30T01:12:04 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:04 IST" name="invokeBrowser" finished-at="2026-09-30T01:12:12 IST" duration-ms="8003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="productVerification(java.util.HashMap)[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:12 IST" name="productVerification" data-provider="getData" finished-at="2026-09-30T01:12:14 IST" depends-on-methods="arijit.practice.PositiveTests.SubmitOrderTest" duration-ms="2165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=Asdf@1234, product=ADIDAS ORIGINAL, email=contact@arijitsinha.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:14 IST" name="tearDown" finished-at="2026-09-30T01:12:15 IST" duration-ms="865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:15 IST" name="invokeBrowser" finished-at="2026-09-30T01:12:21 IST" duration-ms="6554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="productVerification(java.util.HashMap)[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:21 IST" name="productVerification" data-provider="getData" finished-at="2026-09-30T01:12:24 IST" depends-on-methods="arijit.practice.PositiveTests.SubmitOrderTest" duration-ms="2187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=Asdf@2345, product=ZARA COAT 3, email=kriti.sanon@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:arijit.practice.PositiveTests@7b36aa0c]" started-at="2026-09-30T01:12:24 IST" name="tearDown" finished-at="2026-09-30T01:12:24 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- arijit.practice.PositiveTests -->
+    </test> <!-- Positive -->
+  </suite> <!-- Regression -->
+</testng-results>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Positive(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="arijit.practice.PositiveTests">
+        <methods>
+          <include name="SubmitOrderTest"/>
+        </methods>
+      </class> <!-- arijit.practice.PositiveTests -->
+    </classes>
+  </test> <!-- Positive(failed) -->
+  <test thread-count="5" name="Negative(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="arijit.practice.ErrorValidation">
+        <methods>
+          <include name="loginError"/>
+        </methods>
+      </class> <!-- arijit.practice.ErrorValidation -->
+    </classes>
+  </test> <!-- Negative(failed) -->
+</suite> <!-- Failed suite [Regression] -->
