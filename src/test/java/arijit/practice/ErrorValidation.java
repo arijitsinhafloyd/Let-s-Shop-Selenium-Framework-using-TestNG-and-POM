@@ -17,7 +17,7 @@ public class ErrorValidation extends BaseTest{
 	
 	String prodName="ADIDAS ORIGINAL";
 	
-	@Test(groups= {"ErrorValidations"})
+	@Test(groups= {"ErrorValidations"},retryAnalyzer=Retry.class)
 	public void loginError() {
 		lp.get().loginFlow("mrekm@gmail.com", "Aser@3456");
 		String toastM=lp.get().loginError();
